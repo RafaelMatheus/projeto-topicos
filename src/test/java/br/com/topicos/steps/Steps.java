@@ -1,9 +1,9 @@
-package aprendendo.cucumber.steps;
+package br.com.topicos.steps;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 
-public class AlugarFilmeSteps {
+public class Steps {
 
 	
 	@Given("^Que o usuario efetue o login no sistema$")
@@ -19,7 +19,7 @@ public class AlugarFilmeSteps {
 		
 	}
 	@Given("^Passando os parametros; nome: '(.+)' valor: '(\\d+)' categoria: '(.+)'$")
-	public void passandoOsParametros(String nome, int valor, String categoria) throws Throwable {
+	public void passandoOsParametros(String nome, int valor, String categoria){
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("Nome" + nome);
 		System.out.println("valor" + valor);

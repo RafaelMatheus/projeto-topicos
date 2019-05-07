@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("alugar_filme.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("recursos.feature");
 formatter.feature({
   "comments": [
     {
@@ -122,24 +122,24 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "AlugarFilmeSteps.efetueLoginNoSistema()"
+  "location": "Steps.efetueLoginNoSistema()"
 });
 formatter.result({
-  "duration": 210517900,
+  "duration": 175113400,
   "status": "passed"
 });
 formatter.match({
-  "location": "AlugarFilmeSteps.acesseAOpcaoProdutos()"
+  "location": "Steps.acesseAOpcaoProdutos()"
 });
 formatter.result({
-  "duration": 33300,
+  "duration": 24200,
   "status": "passed"
 });
 formatter.match({
-  "location": "AlugarFilmeSteps.cliqueEmCadastrar()"
+  "location": "Steps.cliqueEmCadastrar()"
 });
 formatter.result({
-  "duration": 24500,
+  "duration": 26600,
   "status": "passed"
 });
 formatter.match({
@@ -157,10 +157,10 @@ formatter.match({
       "offset": 63
     }
   ],
-  "location": "AlugarFilmeSteps.passandoOsParametros(String,int,String)"
+  "location": "Steps.passandoOsParametros(String,int,String)"
 });
 formatter.result({
-  "duration": 22428600,
+  "duration": 5093500,
   "status": "passed"
 });
 formatter.scenario({
@@ -203,24 +203,24 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "AlugarFilmeSteps.efetueLoginNoSistema()"
-});
-formatter.result({
-  "duration": 36900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AlugarFilmeSteps.acesseAOpcaoProdutos()"
+  "location": "Steps.efetueLoginNoSistema()"
 });
 formatter.result({
   "duration": 46000,
   "status": "passed"
 });
 formatter.match({
-  "location": "AlugarFilmeSteps.cliqueEmCadastrar()"
+  "location": "Steps.acesseAOpcaoProdutos()"
 });
 formatter.result({
-  "duration": 30700,
+  "duration": 24500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.cliqueEmCadastrar()"
+});
+formatter.result({
+  "duration": 32100,
   "status": "passed"
 });
 formatter.match({
@@ -238,10 +238,10 @@ formatter.match({
       "offset": 64
     }
   ],
-  "location": "AlugarFilmeSteps.passandoOsParametros(String,int,String)"
+  "location": "Steps.passandoOsParametros(String,int,String)"
 });
 formatter.result({
-  "duration": 490400,
+  "duration": 961400,
   "status": "passed"
 });
 });
