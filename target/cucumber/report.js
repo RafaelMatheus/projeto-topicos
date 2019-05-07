@@ -19,7 +19,7 @@ formatter.feature({
   ]
 });
 formatter.scenarioOutline({
-  "line": 5,
+  "line": 4,
   "name": "Deve cadastrar um produto",
   "description": "",
   "id": "cadastrar;deve-cadastrar-um-produto",
@@ -27,27 +27,27 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 6,
+  "line": 5,
   "name": "Que o usuario efetue o login no sistema",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 6,
   "name": "Acesse a opcao produtos",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "Clique em cadastrar",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "Passando os parametros; nome: \u0027\u003cnome\u003e\u0027 valor: \u0027\u003cvalor\u003e\u0027 categoria: \u0027\u003ccategoria\u003e\u0027",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 11,
+  "line": 10,
   "name": "",
   "description": "",
   "id": "cadastrar;deve-cadastrar-um-produto;",
@@ -58,7 +58,7 @@ formatter.examples({
         "valor",
         "categoria"
       ],
-      "line": 12,
+      "line": 11,
       "id": "cadastrar;deve-cadastrar-um-produto;;1"
     },
     {
@@ -67,7 +67,7 @@ formatter.examples({
         "13",
         "Comida"
       ],
-      "line": 13,
+      "line": 12,
       "id": "cadastrar;deve-cadastrar-um-produto;;2"
     },
     {
@@ -76,14 +76,14 @@ formatter.examples({
         "12",
         "bebida"
       ],
-      "line": 14,
+      "line": 13,
       "id": "cadastrar;deve-cadastrar-um-produto;;3"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 13,
+  "line": 12,
   "name": "Deve cadastrar um produto",
   "description": "",
   "id": "cadastrar;deve-cadastrar-um-produto;;2",
@@ -97,22 +97,22 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 6,
+  "line": 5,
   "name": "Que o usuario efetue o login no sistema",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 6,
   "name": "Acesse a opcao produtos",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "Clique em cadastrar",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "Passando os parametros; nome: \u0027Rafael\u0027 valor: \u002713\u0027 categoria: \u0027Comida\u0027",
   "matchedColumns": [
     0,
@@ -125,21 +125,21 @@ formatter.match({
   "location": "Steps.efetueLoginNoSistema()"
 });
 formatter.result({
-  "duration": 175113400,
+  "duration": 30059225700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.acesseAOpcaoProdutos()"
 });
 formatter.result({
-  "duration": 24200,
+  "duration": 30800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.cliqueEmCadastrar()"
 });
 formatter.result({
-  "duration": 26600,
+  "duration": 17000,
   "status": "passed"
 });
 formatter.match({
@@ -160,11 +160,11 @@ formatter.match({
   "location": "Steps.passandoOsParametros(String,int,String)"
 });
 formatter.result({
-  "duration": 5093500,
+  "duration": 3541900,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 14,
+  "line": 13,
   "name": "Deve cadastrar um produto",
   "description": "",
   "id": "cadastrar;deve-cadastrar-um-produto;;3",
@@ -178,22 +178,22 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 6,
+  "line": 5,
   "name": "Que o usuario efetue o login no sistema",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 6,
   "name": "Acesse a opcao produtos",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "Clique em cadastrar",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "Passando os parametros; nome: \u0027Matheus\u0027 valor: \u002712\u0027 categoria: \u0027bebida\u0027",
   "matchedColumns": [
     0,
@@ -204,44 +204,4 @@ formatter.step({
 });
 formatter.match({
   "location": "Steps.efetueLoginNoSistema()"
-});
-formatter.result({
-  "duration": 46000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.acesseAOpcaoProdutos()"
-});
-formatter.result({
-  "duration": 24500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.cliqueEmCadastrar()"
-});
-formatter.result({
-  "duration": 32100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Matheus",
-      "offset": 31
-    },
-    {
-      "val": "12",
-      "offset": 48
-    },
-    {
-      "val": "bebida",
-      "offset": 64
-    }
-  ],
-  "location": "Steps.passandoOsParametros(String,int,String)"
-});
-formatter.result({
-  "duration": 961400,
-  "status": "passed"
-});
 });
