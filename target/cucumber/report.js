@@ -1,291 +1,247 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("alugar_filme.feature");
 formatter.feature({
-  "line": 2,
-  "name": "Alugar filme",
+  "comments": [
+    {
+      "line": 1,
+      "value": "#language:en"
+    }
+  ],
+  "line": 3,
+  "name": "Cadastrar",
   "description": "",
-  "id": "alugar-filme",
+  "id": "cadastrar",
   "keyword": "Feature",
   "tags": [
     {
-      "line": 1,
+      "line": 2,
       "name": "@ct001"
     }
   ]
 });
-formatter.scenario({
-  "line": 4,
-  "name": "Deve alugar filme com sucesso",
-  "description": "",
-  "id": "alugar-filme;deve-alugar-filme-com-sucesso",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
+formatter.scenarioOutline({
   "line": 5,
-  "name": "um filme com estoque de 2 unidades",
-  "keyword": "Given "
+  "name": "Deve cadastrar um produto",
+  "description": "",
+  "id": "cadastrar;deve-cadastrar-um-produto",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 6,
-  "name": "que o preco do aluguel seja R$ 3",
-  "keyword": "And "
+  "name": "Que o usuario efetue o login no sistema",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 7,
-  "name": "alugar",
-  "keyword": "When "
+  "name": "Acesse a opcao produtos",
+  "keyword": "And "
 });
 formatter.step({
   "line": 8,
-  "name": "o preco do aluguel sera R$ 3",
-  "keyword": "Then "
+  "name": "Clique em cadastrar",
+  "keyword": "And "
 });
 formatter.step({
   "line": 9,
-  "name": "a data de entrega sera no dia seguinte",
+  "name": "Passando os parametros; nome: \u0027\u003cnome\u003e\u0027 valor: \u0027\u003cvalor\u003e\u0027 categoria: \u0027\u003ccategoria\u003e\u0027",
   "keyword": "And "
 });
-formatter.step({
-  "line": 10,
-  "name": "e o estoque do filme sera 1 unidade",
-  "keyword": "And "
-});
-formatter.match({
-  "arguments": [
+formatter.examples({
+  "line": 11,
+  "name": "",
+  "description": "",
+  "id": "cadastrar;deve-cadastrar-um-produto;",
+  "rows": [
     {
-      "val": "2",
-      "offset": 24
+      "cells": [
+        "nome",
+        "valor",
+        "categoria"
+      ],
+      "line": 12,
+      "id": "cadastrar;deve-cadastrar-um-produto;;1"
+    },
+    {
+      "cells": [
+        "Rafael",
+        "13",
+        "Comida"
+      ],
+      "line": 13,
+      "id": "cadastrar;deve-cadastrar-um-produto;;2"
+    },
+    {
+      "cells": [
+        "Matheus",
+        "12",
+        "bebida"
+      ],
+      "line": 14,
+      "id": "cadastrar;deve-cadastrar-um-produto;;3"
     }
   ],
-  "location": "AlugarFilmeSteps.umFilmeComEstoqueDeUnidades(int)"
-});
-formatter.result({
-  "duration": 143980100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "3",
-      "offset": 31
-    }
-  ],
-  "location": "AlugarFilmeSteps.que_o_preco_do_aluguel_seja_R$(int)"
-});
-formatter.result({
-  "duration": 654400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AlugarFilmeSteps.alugar()"
-});
-formatter.result({
-  "duration": 1212100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "3",
-      "offset": 27
-    }
-  ],
-  "location": "AlugarFilmeSteps.o_preco_do_aluguel_sera_R$(int)"
-});
-formatter.result({
-  "duration": 16801800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AlugarFilmeSteps.a_data_de_entrega_sera_no_dia_seguinte()"
-});
-formatter.result({
-  "duration": 227500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 26
-    }
-  ],
-  "location": "AlugarFilmeSteps.e_o_estoque_do_filme_sera_unidade(int)"
-});
-formatter.result({
-  "duration": 198700,
-  "status": "passed"
+  "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 12,
-  "name": "N�o deve alugar filme sem estoque",
-  "description": "",
-  "id": "alugar-filme;n�o-deve-alugar-filme-sem-estoque",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
   "line": 13,
-  "name": "um filme com estoque de 0 unidades",
+  "name": "Deve cadastrar um produto",
+  "description": "",
+  "id": "cadastrar;deve-cadastrar-um-produto;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@ct001"
+    }
+  ]
+});
+formatter.step({
+  "line": 6,
+  "name": "Que o usuario efetue o login no sistema",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 14,
-  "name": "alugar",
-  "keyword": "When "
+  "line": 7,
+  "name": "Acesse a opcao produtos",
+  "keyword": "And "
 });
 formatter.step({
-  "line": 15,
-  "name": "nao sera possivel por falta de estoque",
-  "keyword": "Then "
+  "line": 8,
+  "name": "Clique em cadastrar",
+  "keyword": "And "
 });
 formatter.step({
-  "line": 16,
-  "name": "e o estoque do filme sera 0 unidade",
+  "line": 9,
+  "name": "Passando os parametros; nome: \u0027Rafael\u0027 valor: \u002713\u0027 categoria: \u0027Comida\u0027",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
   "keyword": "And "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "0",
-      "offset": 24
-    }
-  ],
-  "location": "AlugarFilmeSteps.umFilmeComEstoqueDeUnidades(int)"
+  "location": "AlugarFilmeSteps.efetueLoginNoSistema()"
 });
 formatter.result({
-  "duration": 391500,
+  "duration": 210517900,
   "status": "passed"
 });
 formatter.match({
-  "location": "AlugarFilmeSteps.alugar()"
+  "location": "AlugarFilmeSteps.acesseAOpcaoProdutos()"
 });
 formatter.result({
-  "duration": 138500,
+  "duration": 33300,
   "status": "passed"
 });
 formatter.match({
-  "location": "AlugarFilmeSteps.nao_sera_possivel_por_falta_de_estoque()"
+  "location": "AlugarFilmeSteps.cliqueEmCadastrar()"
 });
 formatter.result({
-  "duration": 32100,
+  "duration": 24500,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "0",
-      "offset": 26
+      "val": "Rafael",
+      "offset": 31
+    },
+    {
+      "val": "13",
+      "offset": 47
+    },
+    {
+      "val": "Comida",
+      "offset": 63
     }
   ],
-  "location": "AlugarFilmeSteps.e_o_estoque_do_filme_sera_unidade(int)"
+  "location": "AlugarFilmeSteps.passandoOsParametros(String,int,String)"
 });
 formatter.result({
-  "duration": 87500,
+  "duration": 22428600,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 18,
-  "name": "Deve dar condicoes especiais por categoria extendida",
+  "line": 14,
+  "name": "Deve cadastrar um produto",
   "description": "",
-  "id": "alugar-filme;deve-dar-condicoes-especiais-por-categoria-extendida",
+  "id": "cadastrar;deve-cadastrar-um-produto;;3",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@ct001"
+    }
+  ]
 });
 formatter.step({
-  "line": 19,
-  "name": "um filme com estoque de 2 unidades",
+  "line": 6,
+  "name": "Que o usuario efetue o login no sistema",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 20,
-  "name": "que o preco do aluguel seja R$ 4",
+  "line": 7,
+  "name": "Acesse a opcao produtos",
   "keyword": "And "
 });
 formatter.step({
-  "line": 21,
-  "name": "o tipo do aluguel seja extendido",
+  "line": 8,
+  "name": "Clique em cadastrar",
   "keyword": "And "
 });
 formatter.step({
-  "line": 22,
-  "name": "alugar",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 23,
-  "name": "o preco do aluguel sera R$ 8",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 24,
-  "name": "a data de entrega sera em 3 dias",
+  "line": 9,
+  "name": "Passando os parametros; nome: \u0027Matheus\u0027 valor: \u002712\u0027 categoria: \u0027bebida\u0027",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
   "keyword": "And "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 24
-    }
-  ],
-  "location": "AlugarFilmeSteps.umFilmeComEstoqueDeUnidades(int)"
+  "location": "AlugarFilmeSteps.efetueLoginNoSistema()"
 });
 formatter.result({
-  "duration": 199300,
+  "duration": 36900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AlugarFilmeSteps.acesseAOpcaoProdutos()"
+});
+formatter.result({
+  "duration": 46000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AlugarFilmeSteps.cliqueEmCadastrar()"
+});
+formatter.result({
+  "duration": 30700,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "4",
+      "val": "Matheus",
       "offset": 31
-    }
-  ],
-  "location": "AlugarFilmeSteps.que_o_preco_do_aluguel_seja_R$(int)"
-});
-formatter.result({
-  "duration": 361700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AlugarFilmeSteps.o_tipo_do_aluguel_seja_extendido()"
-});
-formatter.result({
-  "duration": 41800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AlugarFilmeSteps.alugar()"
-});
-formatter.result({
-  "duration": 1916200,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
+    },
     {
-      "val": "8",
-      "offset": 27
-    }
-  ],
-  "location": "AlugarFilmeSteps.o_preco_do_aluguel_sera_R$(int)"
-});
-formatter.result({
-  "duration": 306100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
+      "val": "12",
+      "offset": 48
+    },
     {
-      "val": "3",
-      "offset": 26
+      "val": "bebida",
+      "offset": 64
     }
   ],
-  "location": "AlugarFilmeSteps.a_data_de_entrega_sera_em_dias(int)"
+  "location": "AlugarFilmeSteps.passandoOsParametros(String,int,String)"
 });
 formatter.result({
-  "duration": 105800,
+  "duration": 490400,
   "status": "passed"
 });
 });

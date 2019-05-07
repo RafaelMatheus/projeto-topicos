@@ -1,4 +1,4 @@
-package br.com.topicos.steps;
+package br.com.topicos.runner;
 
 import org.junit.runner.RunWith;
 
