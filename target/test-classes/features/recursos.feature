@@ -12,7 +12,7 @@ Feature: Cadastrar
  Examples:
     | nome      | sobrenome	 	 |  cpf 		 |email					 |senha		   |confirmacao		 |telefone		|logradouro		 | numero    |bairro      |complemento|cep        | mensagem   |
     | Rafael    | Castro     	 |   11111111111 |suporte@restaurante.com|232111	   |232111			 |	81993931111	|centro          |11		 |centro      |centro     |55555555   |CPF invalido|
-    | Matheus   | Pereira    	 |   78963275035 |rh@restaurante.com     |232111	   |211321313        |  81993931111 |centro          |  11       | centro     |	cenro	  |55555555   ||
+    | Matheus   | Pereira    	 |   78963275035 |rh@restaurante.com     |232111	   |211321313        |  81993931111 |centro          |  11       | centro     |	cenro	  |55555555   |Senha e confirmacao de senha nao conferem|
     	
     
 

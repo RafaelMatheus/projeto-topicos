@@ -2,6 +2,7 @@ package br.com.topicos.steps;
 
 import br.com.topicos.core.BaseTest;
 import br.com.topicos.pages.RegistrarPage;
+import br.com.topicos.utils.Utils;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -61,7 +62,7 @@ public class Steps extends BaseTest {
 	
 	@Then("^Devera exibir a seguinte mensagem '(.+)")
 	public void menssagem(String mensagem) {
-		Assert.assertEquals(mensagem, registrar.getTextAlert());
+		Assert.assertEquals(Utils.removerCaracteresEspeciais(mensagem), Utils.removerCaracteresEspeciais(registrar.getTextAlert()));
 		System.out.println(registrar.getTextAlert());
 	}
 	
