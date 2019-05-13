@@ -50,4 +50,10 @@ public class Steps extends BaseTest {
 		registrar.preencherCampoComplemento(complemento);
 		registrar.preencherCampoCep(cep);
 	}
+	
+	@Given("^clicar no botao registrar$")
+	public void clicarRegistrar(){
+		registrar.submit();
+	}
+	
 }

@@ -36,8 +36,13 @@ formatter.step({
   "name": "preencha o formulario com os campos; nome: \u0027\u003cnome\u003e\u0027 sobrenome: \u0027\u003csobrenome\u003e\u0027 cpf: \u0027\u003ccpf\u003e\u0027 email: \u0027\u003cemail\u003e\u0027 senha: \u0027\u003csenha\u003e\u0027 confirmacao da senha: \u0027\u003cconfirmacao\u003e\u0027 telefone: \u0027\u003ctelefone\u003e\u0027 logradouro: \u0027\u003clogradouro\u003e\u0027 numero: \u0027\u003cnumero\u003e\u0027 bairro: \u0027\u003cbairro\u003e\u0027 complemento: \u0027\u003ccomplemento\u003e\u0027 cep: \u0027\u003ccep\u003e\u0027",
   "keyword": "And "
 });
+formatter.step({
+  "line": 7,
+  "name": "clicar no botao registrar",
+  "keyword": "And "
+});
 formatter.examples({
-  "line": 8,
+  "line": 11,
   "name": "",
   "description": "",
   "id": "cadastrar;deve-cadastrar-um-novo-usuario;",
@@ -57,7 +62,7 @@ formatter.examples({
         "complemento",
         "cep"
       ],
-      "line": 9,
+      "line": 12,
       "id": "cadastrar;deve-cadastrar-um-novo-usuario;;1"
     },
     {
@@ -75,7 +80,7 @@ formatter.examples({
         "centro",
         "55555555"
       ],
-      "line": 10,
+      "line": 13,
       "id": "cadastrar;deve-cadastrar-um-novo-usuario;;2"
     },
     {
@@ -93,18 +98,18 @@ formatter.examples({
         "cenro",
         "55555555"
       ],
-      "line": 11,
+      "line": 14,
       "id": "cadastrar;deve-cadastrar-um-novo-usuario;;3"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 17036112109,
+  "duration": 19035768519,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 10,
+  "line": 13,
   "name": "Deve cadastrar um novo usuario",
   "description": "",
   "id": "cadastrar;deve-cadastrar-um-novo-usuario;;2",
@@ -141,11 +146,16 @@ formatter.step({
   ],
   "keyword": "And "
 });
+formatter.step({
+  "line": 7,
+  "name": "clicar no botao registrar",
+  "keyword": "And "
+});
 formatter.match({
   "location": "Steps.cliqueEmRegistrar()"
 });
 formatter.result({
-  "duration": 2935606499,
+  "duration": 2660453704,
   "status": "passed"
 });
 formatter.match({
@@ -202,19 +212,26 @@ formatter.match({
   "location": "Steps.preencherFormulario(String,String,String,String,String,String,String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 2169962048,
+  "duration": 2446658309,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.clicarRegistrar()"
+});
+formatter.result({
+  "duration": 218015244,
   "status": "passed"
 });
 formatter.after({
-  "duration": 256523683,
+  "duration": 246236519,
   "status": "passed"
 });
 formatter.before({
-  "duration": 22760162655,
+  "duration": 22396824606,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 11,
+  "line": 14,
   "name": "Deve cadastrar um novo usuario",
   "description": "",
   "id": "cadastrar;deve-cadastrar-um-novo-usuario;;3",
@@ -251,11 +268,16 @@ formatter.step({
   ],
   "keyword": "And "
 });
+formatter.step({
+  "line": 7,
+  "name": "clicar no botao registrar",
+  "keyword": "And "
+});
 formatter.match({
   "location": "Steps.cliqueEmRegistrar()"
 });
 formatter.result({
-  "duration": 79666,
+  "duration": 48875,
   "status": "passed"
 });
 formatter.match({
@@ -312,11 +334,18 @@ formatter.match({
   "location": "Steps.preencherFormulario(String,String,String,String,String,String,String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 2453562849,
+  "duration": 2017946331,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.clicarRegistrar()"
+});
+formatter.result({
+  "duration": 472483255,
   "status": "passed"
 });
 formatter.after({
-  "duration": 192409258,
+  "duration": 304854976,
   "status": "passed"
 });
 });

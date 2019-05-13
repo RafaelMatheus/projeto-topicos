@@ -9,6 +9,11 @@ public class RegistrarPage {
 	public RegistrarPage(WebDriver webdriver) {
 		this.webdriver = webdriver;
 	}
+	
+	public void submit() {
+		webdriver.findElement(By.xpath("//*[@id='form-box']/div/div/div[2]/form/div/div[14]/button[1]")).submit();
+	}
+		
 	public void preencherCampoNome(String key) {
 		webdriver.findElement(By.id("nome")).sendKeys(key);
 	}

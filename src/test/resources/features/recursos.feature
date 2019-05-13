@@ -4,6 +4,9 @@ Feature: Cadastrar
   Scenario Outline: Deve cadastrar um novo usuario
     Given clique no botao registrar
  	And preencha o formulario com os campos; nome: '<nome>' sobrenome: '<sobrenome>' cpf: '<cpf>' email: '<email>' senha: '<senha>' confirmacao da senha: '<confirmacao>' telefone: '<telefone>' logradouro: '<logradouro>' numero: '<numero>' bairro: '<bairro>' complemento: '<complemento>' cep: '<cep>'
+ 	And clicar no botao registrar
+ 
+ 	
  
  Examples:
     | nome      | sobrenome	 	 |  cpf 		 |email					 |senha		   |confirmacao		 |telefone		|logradouro		 | numero    |bairro      |complemento|cep        |
