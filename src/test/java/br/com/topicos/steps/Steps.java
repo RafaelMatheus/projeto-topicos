@@ -1,5 +1,7 @@
 package br.com.topicos.steps;
 
+import org.junit.After;
+import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -23,6 +25,7 @@ public class Steps {
 	}
 	
 	@After
+	public void 
 	@Given("^Que o usuario efetue o login no sistema$")
 	public void efetueLoginNoSistema(){
 	
