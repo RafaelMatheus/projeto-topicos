@@ -39,10 +39,15 @@ formatter.step({
 formatter.step({
   "line": 7,
   "name": "clicar no botao registrar",
-  "keyword": "And "
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "Devera exibir a seguinte mensagem \u0027\u003cmensagem\u003e\u0027",
+  "keyword": "Then "
 });
 formatter.examples({
-  "line": 11,
+  "line": 12,
   "name": "",
   "description": "",
   "id": "cadastrar;deve-cadastrar-um-novo-usuario;",
@@ -60,9 +65,10 @@ formatter.examples({
         "numero",
         "bairro",
         "complemento",
-        "cep"
+        "cep",
+        "mensagem"
       ],
-      "line": 12,
+      "line": 13,
       "id": "cadastrar;deve-cadastrar-um-novo-usuario;;1"
     },
     {
@@ -78,38 +84,40 @@ formatter.examples({
         "11",
         "centro",
         "centro",
-        "55555555"
+        "55555555",
+        "CPF inv�lido"
       ],
-      "line": 13,
+      "line": 14,
       "id": "cadastrar;deve-cadastrar-um-novo-usuario;;2"
     },
     {
       "cells": [
         "Matheus",
         "Pereira",
-        "11111111111",
+        "78963275035",
         "rh@restaurante.com",
         "232111",
-        "232111",
+        "211321313",
         "81993931111",
         "centro",
         "11",
         "centro",
         "cenro",
-        "55555555"
+        "55555555",
+        ""
       ],
-      "line": 14,
+      "line": 15,
       "id": "cadastrar;deve-cadastrar-um-novo-usuario;;3"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 19035768519,
+  "duration": 16862887668,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 13,
+  "line": 14,
   "name": "Deve cadastrar um novo usuario",
   "description": "",
   "id": "cadastrar;deve-cadastrar-um-novo-usuario;;2",
@@ -149,13 +157,21 @@ formatter.step({
 formatter.step({
   "line": 7,
   "name": "clicar no botao registrar",
-  "keyword": "And "
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "Devera exibir a seguinte mensagem \u0027CPF inv�lido\u0027",
+  "matchedColumns": [
+    12
+  ],
+  "keyword": "Then "
 });
 formatter.match({
   "location": "Steps.cliqueEmRegistrar()"
 });
 formatter.result({
-  "duration": 2660453704,
+  "duration": 528538718,
   "status": "passed"
 });
 formatter.match({
@@ -212,26 +228,40 @@ formatter.match({
   "location": "Steps.preencherFormulario(String,String,String,String,String,String,String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 2446658309,
+  "duration": 2265201401,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.clicarRegistrar()"
 });
 formatter.result({
-  "duration": 218015244,
+  "duration": 58924902,
   "status": "passed"
 });
+formatter.match({
+  "arguments": [
+    {
+      "val": "CPF inv�lido\u0027",
+      "offset": 35
+    }
+  ],
+  "location": "Steps.menssagem(String)"
+});
+formatter.result({
+  "duration": 1064636898,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003cCPF inv[�lido\u0027]\u003e but was:\u003cCPF inv[álido]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat br.com.topicos.steps.Steps.menssagem(Steps.java:64)\r\n\tat ✽.Then Devera exibir a seguinte mensagem \u0027CPF inv�lido\u0027(recursos.feature:8)\r\n",
+  "status": "failed"
+});
 formatter.after({
-  "duration": 246236519,
+  "duration": 338927541,
   "status": "passed"
 });
 formatter.before({
-  "duration": 22396824606,
+  "duration": 11589395150,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 14,
+  "line": 15,
   "name": "Deve cadastrar um novo usuario",
   "description": "",
   "id": "cadastrar;deve-cadastrar-um-novo-usuario;;3",
@@ -251,7 +281,7 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "preencha o formulario com os campos; nome: \u0027Matheus\u0027 sobrenome: \u0027Pereira\u0027 cpf: \u002711111111111\u0027 email: \u0027rh@restaurante.com\u0027 senha: \u0027232111\u0027 confirmacao da senha: \u0027232111\u0027 telefone: \u002781993931111\u0027 logradouro: \u0027centro\u0027 numero: \u002711\u0027 bairro: \u0027centro\u0027 complemento: \u0027cenro\u0027 cep: \u002755555555\u0027",
+  "name": "preencha o formulario com os campos; nome: \u0027Matheus\u0027 sobrenome: \u0027Pereira\u0027 cpf: \u002778963275035\u0027 email: \u0027rh@restaurante.com\u0027 senha: \u0027232111\u0027 confirmacao da senha: \u0027211321313\u0027 telefone: \u002781993931111\u0027 logradouro: \u0027centro\u0027 numero: \u002711\u0027 bairro: \u0027centro\u0027 complemento: \u0027cenro\u0027 cep: \u002755555555\u0027",
   "matchedColumns": [
     0,
     1,
@@ -271,13 +301,21 @@ formatter.step({
 formatter.step({
   "line": 7,
   "name": "clicar no botao registrar",
-  "keyword": "And "
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "Devera exibir a seguinte mensagem \u0027\u0027",
+  "matchedColumns": [
+    12
+  ],
+  "keyword": "Then "
 });
 formatter.match({
   "location": "Steps.cliqueEmRegistrar()"
 });
 formatter.result({
-  "duration": 48875,
+  "duration": 33235,
   "status": "passed"
 });
 formatter.match({
@@ -291,7 +329,7 @@ formatter.match({
       "offset": 65
     },
     {
-      "val": "11111111111",
+      "val": "78963275035",
       "offset": 80
     },
     {
@@ -303,49 +341,53 @@ formatter.match({
       "offset": 129
     },
     {
-      "val": "232111",
+      "val": "211321313",
       "offset": 160
     },
     {
       "val": "81993931111",
-      "offset": 179
+      "offset": 182
     },
     {
       "val": "centro",
-      "offset": 205
+      "offset": 208
     },
     {
       "val": "11",
-      "offset": 222
+      "offset": 225
     },
     {
       "val": "centro",
-      "offset": 235
+      "offset": 238
     },
     {
       "val": "cenro",
-      "offset": 257
+      "offset": 260
     },
     {
       "val": "55555555",
-      "offset": 270
+      "offset": 273
     }
   ],
   "location": "Steps.preencherFormulario(String,String,String,String,String,String,String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 2017946331,
+  "duration": 2479912221,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.clicarRegistrar()"
 });
 formatter.result({
-  "duration": 472483255,
+  "duration": 57535880,
   "status": "passed"
 });
-formatter.after({
-  "duration": 304854976,
-  "status": "passed"
-});
+formatter.match({
+  "arguments": [
+    {
+      "val": "\u0027",
+      "offset": 35
+    }
+  ],
+  "location": "Steps.menssagem(String)"
 });

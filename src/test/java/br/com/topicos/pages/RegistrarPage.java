@@ -13,7 +13,16 @@ public class RegistrarPage {
 	public void submit() {
 		webdriver.findElement(By.xpath("//*[@id='form-box']/div/div/div[2]/form/div/div[14]/button[1]")).submit();
 	}
-		
+	
+	public String getTextAlert() {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return webdriver.findElement(By.xpath("//*[@id='toast-container']/div/div[2]")).getText();
+	}
 	public void preencherCampoNome(String key) {
 		webdriver.findElement(By.id("nome")).sendKeys(key);
 	}
