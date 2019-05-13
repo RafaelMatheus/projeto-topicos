@@ -20,73 +20,94 @@ formatter.feature({
 });
 formatter.scenarioOutline({
   "line": 4,
-  "name": "Deve cadastrar um produto",
+  "name": "Deve cadastrar um novo usuario",
   "description": "",
-  "id": "cadastrar;deve-cadastrar-um-produto",
+  "id": "cadastrar;deve-cadastrar-um-novo-usuario",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 5,
-  "name": "Que o usuario efetue o login no sistema",
+  "name": "clique no botao registrar",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "Acesse a opcao produtos",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 7,
-  "name": "Clique em cadastrar",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "Passando os parametros; nome: \u0027\u003cnome\u003e\u0027 valor: \u0027\u003cvalor\u003e\u0027 categoria: \u0027\u003ccategoria\u003e\u0027",
+  "name": "preencha o formulario com os campos; nome: \u0027\u003cnome\u003e\u0027 sobrenome: \u0027\u003csobrenome\u003e\u0027 cpf: \u0027\u003ccpf\u003e\u0027 email: \u0027\u003cemail\u003e\u0027 senha: \u0027\u003csenha\u003e\u0027 confirmacao da senha: \u0027\u003cconfirmacao\u003e\u0027 telefone: \u0027\u003ctelefone\u003e\u0027 logradouro: \u0027\u003clogradouro\u003e\u0027 numero: \u0027\u003cnumero\u003e\u0027 bairro: \u0027\u003cbairro\u003e\u0027 complemento: \u0027\u003ccomplemento\u003e\u0027 cep: \u0027\u003ccep\u003e\u0027",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 10,
+  "line": 8,
   "name": "",
   "description": "",
-  "id": "cadastrar;deve-cadastrar-um-produto;",
+  "id": "cadastrar;deve-cadastrar-um-novo-usuario;",
   "rows": [
     {
       "cells": [
         "nome",
-        "valor",
-        "categoria"
+        "sobrenome",
+        "cpf",
+        "email",
+        "senha",
+        "confirmacao",
+        "telefone",
+        "logradouro",
+        "numero",
+        "bairro",
+        "complemento",
+        "cep"
       ],
-      "line": 11,
-      "id": "cadastrar;deve-cadastrar-um-produto;;1"
+      "line": 9,
+      "id": "cadastrar;deve-cadastrar-um-novo-usuario;;1"
     },
     {
       "cells": [
         "Rafael",
-        "13",
-        "Comida"
+        "Castro",
+        "11111111111",
+        "suporte@restaurante.com",
+        "232111",
+        "232111",
+        "81993931111",
+        "centro",
+        "11",
+        "centro",
+        "centro",
+        "55555555"
       ],
-      "line": 12,
-      "id": "cadastrar;deve-cadastrar-um-produto;;2"
+      "line": 10,
+      "id": "cadastrar;deve-cadastrar-um-novo-usuario;;2"
     },
     {
       "cells": [
         "Matheus",
-        "12",
-        "bebida"
+        "Pereira",
+        "11111111111",
+        "rh@restaurante.com",
+        "232111",
+        "232111",
+        "81993931111",
+        "centro",
+        "11",
+        "centro",
+        "cenro",
+        "55555555"
       ],
-      "line": 13,
-      "id": "cadastrar;deve-cadastrar-um-produto;;3"
+      "line": 11,
+      "id": "cadastrar;deve-cadastrar-um-novo-usuario;;3"
     }
   ],
   "keyword": "Examples"
 });
+formatter.before({
+  "duration": 17036112109,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 12,
-  "name": "Deve cadastrar um produto",
+  "line": 10,
+  "name": "Deve cadastrar um novo usuario",
   "description": "",
-  "id": "cadastrar;deve-cadastrar-um-produto;;2",
+  "id": "cadastrar;deve-cadastrar-um-novo-usuario;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -98,76 +119,105 @@ formatter.scenario({
 });
 formatter.step({
   "line": 5,
-  "name": "Que o usuario efetue o login no sistema",
+  "name": "clique no botao registrar",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "Acesse a opcao produtos",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 7,
-  "name": "Clique em cadastrar",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "Passando os parametros; nome: \u0027Rafael\u0027 valor: \u002713\u0027 categoria: \u0027Comida\u0027",
+  "name": "preencha o formulario com os campos; nome: \u0027Rafael\u0027 sobrenome: \u0027Castro\u0027 cpf: \u002711111111111\u0027 email: \u0027suporte@restaurante.com\u0027 senha: \u0027232111\u0027 confirmacao da senha: \u0027232111\u0027 telefone: \u002781993931111\u0027 logradouro: \u0027centro\u0027 numero: \u002711\u0027 bairro: \u0027centro\u0027 complemento: \u0027centro\u0027 cep: \u002755555555\u0027",
   "matchedColumns": [
     0,
     1,
-    2
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
   ],
   "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.efetueLoginNoSistema()"
+  "location": "Steps.cliqueEmRegistrar()"
 });
 formatter.result({
-  "duration": 30059225700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.acesseAOpcaoProdutos()"
-});
-formatter.result({
-  "duration": 30800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.cliqueEmCadastrar()"
-});
-formatter.result({
-  "duration": 17000,
+  "duration": 2935606499,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "Rafael",
-      "offset": 31
+      "offset": 44
     },
     {
-      "val": "13",
-      "offset": 47
+      "val": "Castro",
+      "offset": 64
     },
     {
-      "val": "Comida",
-      "offset": 63
+      "val": "11111111111",
+      "offset": 78
+    },
+    {
+      "val": "suporte@restaurante.com",
+      "offset": 99
+    },
+    {
+      "val": "232111",
+      "offset": 132
+    },
+    {
+      "val": "232111",
+      "offset": 163
+    },
+    {
+      "val": "81993931111",
+      "offset": 182
+    },
+    {
+      "val": "centro",
+      "offset": 208
+    },
+    {
+      "val": "11",
+      "offset": 225
+    },
+    {
+      "val": "centro",
+      "offset": 238
+    },
+    {
+      "val": "centro",
+      "offset": 260
+    },
+    {
+      "val": "55555555",
+      "offset": 274
     }
   ],
-  "location": "Steps.passandoOsParametros(String,int,String)"
+  "location": "Steps.preencherFormulario(String,String,String,String,String,String,String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 3541900,
+  "duration": 2169962048,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 256523683,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 22760162655,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 13,
-  "name": "Deve cadastrar um produto",
+  "line": 11,
+  "name": "Deve cadastrar um novo usuario",
   "description": "",
-  "id": "cadastrar;deve-cadastrar-um-produto;;3",
+  "id": "cadastrar;deve-cadastrar-um-novo-usuario;;3",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -179,29 +229,94 @@ formatter.scenario({
 });
 formatter.step({
   "line": 5,
-  "name": "Que o usuario efetue o login no sistema",
+  "name": "clique no botao registrar",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "Acesse a opcao produtos",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 7,
-  "name": "Clique em cadastrar",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "Passando os parametros; nome: \u0027Matheus\u0027 valor: \u002712\u0027 categoria: \u0027bebida\u0027",
+  "name": "preencha o formulario com os campos; nome: \u0027Matheus\u0027 sobrenome: \u0027Pereira\u0027 cpf: \u002711111111111\u0027 email: \u0027rh@restaurante.com\u0027 senha: \u0027232111\u0027 confirmacao da senha: \u0027232111\u0027 telefone: \u002781993931111\u0027 logradouro: \u0027centro\u0027 numero: \u002711\u0027 bairro: \u0027centro\u0027 complemento: \u0027cenro\u0027 cep: \u002755555555\u0027",
   "matchedColumns": [
     0,
     1,
-    2
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
   ],
   "keyword": "And "
 });
 formatter.match({
-  "location": "Steps.efetueLoginNoSistema()"
+  "location": "Steps.cliqueEmRegistrar()"
+});
+formatter.result({
+  "duration": 79666,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Matheus",
+      "offset": 44
+    },
+    {
+      "val": "Pereira",
+      "offset": 65
+    },
+    {
+      "val": "11111111111",
+      "offset": 80
+    },
+    {
+      "val": "rh@restaurante.com",
+      "offset": 101
+    },
+    {
+      "val": "232111",
+      "offset": 129
+    },
+    {
+      "val": "232111",
+      "offset": 160
+    },
+    {
+      "val": "81993931111",
+      "offset": 179
+    },
+    {
+      "val": "centro",
+      "offset": 205
+    },
+    {
+      "val": "11",
+      "offset": 222
+    },
+    {
+      "val": "centro",
+      "offset": 235
+    },
+    {
+      "val": "cenro",
+      "offset": 257
+    },
+    {
+      "val": "55555555",
+      "offset": 270
+    }
+  ],
+  "location": "Steps.preencherFormulario(String,String,String,String,String,String,String,String,String,String,String,String)"
+});
+formatter.result({
+  "duration": 2453562849,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 192409258,
+  "status": "passed"
+});
 });

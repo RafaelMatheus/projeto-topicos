@@ -1,47 +1,53 @@
 package br.com.topicos.steps;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-
-import br.com.topicos.config.Config;
-
+import br.com.topicos.core.BaseTest;
+import br.com.topicos.pages.RegistrarPage;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 
-public class Steps {
-
+public class Steps extends BaseTest {
+	private RegistrarPage registrar;
+	
 	@Before
 	public void setup() {
-		WebDriver driver;
-		ChromeOptions options = new ChromeOptions();
-		options.setHeadless(Config.HEADLESS);
-		System.setProperty("webdriver.chrome.driver", Config.BROWSER);
-		driver = new ChromeDriver(options);
-		driver.manage().window().maximize();
-		driver.get(Config.ENDERECO);
+		registrar = new RegistrarPage(navigate());
+	}
+	@After()
+	public void tearDown() {
+		quit();
 	}
 	
-	@After
-	@Given("^Que o usuario efetue o login no sistema$")
-	public void efetueLoginNoSistema(){
+	@Given("^clique no botao registrar$")
+	public void cliqueEmRegistrar(){
 	
 	}
-	@And("^Acesse a opcao produtos$")
-	public void acesseAOpcaoProdutos() {
-		
+	
+	@And("^preencha o formulario com os campos; nome: '(.+)' sobrenome: '(.+)' cpf: '(.+)' email: '(.+)' senha: '(.+)' confirmacao da senha: '(.+)' telefone: '(.+)' logradouro: '(.+)' numero: '(.+)' bairro: '(.+)' complemento: '(.+)' cep: '(.+)'$")
+	public void preencherFormulario(String nome, 
+			String sobrenome,
+			String cpf, 
+			String email,
+			String senha, 
+			String confirmacao, 
+			String telefone, 
+			String logradouro,
+			String numero, 
+			String bairro, 
+			String complemento,
+			String cep) {
+		registrar.preencherCampoNome(nome);
+		registrar.preencherCampoSobrenome(sobrenome);
+		registrar.preencherCampoCpf(cpf);
+		registrar.preencherCampoEmail(email);
+		registrar.preencherCampoSenha(senha);
+		registrar.preencherCampoConfirmacaoSenha(confirmacao);
+		registrar.preencherCampoTelefone(telefone);
+		registrar.preencherCampoLogradouro(logradouro);
+		registrar.preencherCampoNumero(numero);
+		registrar.preencherCampoBairro(bairro);
+		registrar.preencherCampoComplemento(complemento);
+		registrar.preencherCampoCep(cep);
 	}
-	@And("^Clique em cadastrar$")
-	public void cliqueEmCadastrar() {
-		
-	}
-	@Given("^Passando os parametros; nome: '(.+)' valor: '(\\d+)' categoria: '(.+)'$")
-	public void passandoOsParametros(String nome, int valor, String categoria){
-	    // Write code here that turns the phrase above into concrete actions
-		System.out.println("Nome" + nome);
-		System.out.println("valor" + valor);
-		System.out.println("categoria" + categoria);
-		
-	}
-
 }
